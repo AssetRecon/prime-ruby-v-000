@@ -10,6 +10,6 @@ return false if num == 0 || num == 1
      return false # this means the number is not prime
    else
      return true # this means the number is prime
-   end 
+   end
  end
 end
