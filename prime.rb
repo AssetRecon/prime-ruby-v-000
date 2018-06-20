@@ -2,7 +2,6 @@
 def prime?(int)
 
 return false if int == 0 || int == 1
-Math.sqrt(int).to_i.downto(2).each {|i| return false if int % i == 0}
-  true
+(2..Math.sqrt(num)).none? { |i| (num % i).zero? }
 
 end
