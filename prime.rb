@@ -2,6 +2,11 @@
 def prime?(int)
 
 return false if int == 0 || int == 1
-(2..Math.sqrt(int)).none? { |i| (int % i).zero? }
+
+2.upto(Math.sqrt(num).ceil) do |i|
+        break if num%i==0
+        return true if i==Math.sqrt(num).ceil   
+    end
+    return false
 
 end
