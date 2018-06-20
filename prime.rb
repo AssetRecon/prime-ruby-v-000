@@ -1,7 +1,7 @@
 # Add  code here!
-def prime?(int)
+def prime?(num)
 
-return false if int == 0 || int == 1
+return false if num == 0 || num == 1
 
 2.upto(Math.sqrt(num).ceil) do |i|
         break if num%i==0
